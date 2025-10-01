@@ -1,0 +1,6 @@
+{
+  "self": "127.0.0.1:8001",
+  "peers": ["127.0.0.1:8002", "127.0.0.1:8003", "127.0.0.1:8004"],
+  "directory": "./sync_data/node1",
+  "sync_interval_seconds": 5
+}

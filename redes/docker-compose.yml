@@ -1,0 +1,40 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  # Definindo o serviço para o primeiro nó
+  nodo1:
+    build: .
+    # Comando que será executado quando o container iniciar
+    command: python3 main.py --config /app/config/node1.json
+    volumes:
+      # Mapeia a pasta de dados do seu PC para dentro do container
+      - ./sync_data/node1:/app/sync_data
+      # Mapeia o arquivo de configuração específico deste nó
+      - ./config/node1.json:/app/config/node1.json:ro
+    networks:
+      - p2p_network
+
+  # Definindo o serviço para o segundo nó
+  nodo2:
+    build: .
+    command: python3 main.py --config /app/config/node2.json
+    volumes:
+      - ./sync_data/node2:/app/sync_data
+      - ./config/node2.json:/app/config/node2.json:ro
+    networks:
+      - p2p_network
+
+  # Definindo o serviço para o terceiro nó
+  nodo3:
+    build: .
+    command: python3 main.py --config /app/config/node3.json
+    volumes:
+      - ./sync_data/node3:/app/sync_data
+      - ./config/node3.json:/app/config/node3.json:ro
+    networks:
+      - p2p_network
+
+# Definindo a rede virtual onde todos os nós vão se comunicar
+networks:
+  p2p_network:

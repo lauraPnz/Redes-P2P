@@ -1,0 +1,6 @@
+{
+  "self": "nodo1:8001",
+  "peers": ["nodo2:8002", "nodo3:8003"],
+  "directory": "/app/sync_data",
+  "sync_interval_seconds": 5
+}

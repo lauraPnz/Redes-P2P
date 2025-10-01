@@ -1,0 +1,14 @@
+# Dockerfile
+
+# 1. Usar uma imagem base oficial e leve do Python
+FROM python:3.9-slim
+
+# 2. Definir o diretório de trabalho dentro do container
+WORKDIR /app
+
+# 3. Copiar todos os seus scripts Python para dentro do container
+# O ponto '.' significa para copiar tudo da pasta atual (no seu PC) para o WORKDIR (dentro do container)
+COPY *.py /app/
+
+# O comando para iniciar o peer será definido no docker-compose.yml,
+# pois cada nó usará um comando diferente (com um --config diferente).
