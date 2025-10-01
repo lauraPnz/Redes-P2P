@@ -13,21 +13,19 @@ Toda a comunicação é realizada sobre o protocolo **UDP**, o que exigiu a cria
 * Navegue até a Pasta Raiz: Em todos os quatro terminais, execute o comando cd para entrar na pasta do seu projeto.
 * Limpe Dados Antigos: No Terminal de Controle, execute o comando abaixo para apagar a pasta sync_data de testes anteriores.
 * Crie as Pastas de Sincronização: No Terminal de Controle, crie a estrutura de diretórios limpa.
-   * mkdir sync_data/nodo1
-   * mkdir sync_data/nodo2
-   * mkdir sync_data/nodo3
+   * mkdir sync_data/nodo1, sync_data/nodo2, sync_data/nodo3
 *-Execute um comando em cada um dos três terminais reservados para os nós.
   * No Terminal 1:
-      * python3 main.py --config config_local/nodo1.json
+      * python3 main.py --config config/node1.json
   * No Terminal 2:
-      * python3 main.py --config config_local/nodo2.json
+      * python3 main.py --config config/node2.json
   * No Terminal 3:
-      * python3 main.py --config config_local/nodo3.json
+      * python3 main.py --config config/node3.json
 * Use o Terminal de controle para realizar os testes:
    * Cirar Arquivo:
-        *echo "teste local" > sync_data/nodo1/local.txt
+        *echo "teste local" > sync_data/node1/local.txt
     *Deletar Arquivo:
-        * del sync_data/nodo3/local.txt
+        * del sync_data/node3/local.txt
 
 ## Para execução com Docker
 * Inicie o Docker Desktop: Garanta que o aplicativo esteja aberto e o motor em execução.
