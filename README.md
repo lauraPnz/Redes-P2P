@@ -13,31 +13,31 @@ Toda a comunicação é realizada sobre o protocolo **UDP**, o que exigiu a cria
 * Navegue até a Pasta Raiz: Em todos os quatro terminais, execute o comando cd para entrar na pasta do seu projeto.
 * Limpe Dados Antigos: No Terminal de Controle, execute o comando abaixo para apagar a pasta sync_data de testes anteriores.
 * Crie as Pastas de Sincronização: No Terminal de Controle, crie a estrutura de diretórios limpa.
-    mkdir sync_data/nodo1
-    mkdir sync_data/nodo2
-    mkdir sync_data/nodo3
-5-Execute um comando em cada um dos três terminais reservados para os nós.
-  No Terminal 1:
-      python3 main.py --config config_local/nodo1.json
-  No Terminal 2:
-      python3 main.py --config config_local/nodo2.json
-  No Terminal 3:
-      python3 main.py --config config_local/nodo3.json
-6- Use o Terminal de controle para realizar os testes:
-    Cirar Arquivo:
-        echo "teste local" > sync_data/nodo1/local.txt
-    Deletar Arquivo:
-        del sync_data/nodo3/local.txt
+   * mkdir sync_data/nodo1
+   * mkdir sync_data/nodo2
+   * mkdir sync_data/nodo3
+*-Execute um comando em cada um dos três terminais reservados para os nós.
+  * No Terminal 1:
+      * python3 main.py --config config_local/nodo1.json
+  * No Terminal 2:
+      * python3 main.py --config config_local/nodo2.json
+  * No Terminal 3:
+      * python3 main.py --config config_local/nodo3.json
+* Use o Terminal de controle para realizar os testes:
+   * Cirar Arquivo:
+        *echo "teste local" > sync_data/nodo1/local.txt
+    *Deletar Arquivo:
+        * del sync_data/nodo3/local.txt
 
 ## Para execução com Docker
-1-Inicie o Docker Desktop: Garanta que o aplicativo esteja aberto e o motor em execução (ícone da baleia 🐳 estável).
-2-Abra 1 Terminal: Você só precisa de um terminal principal para o Docker Compose.
-3-Navegue até a Pasta Raiz: Execute o cd para entrar na pasta do projeto.
-4-Construa e Inicie os Containers: No terminal principal, execute:
-    docker compose up --build
-5- No segundo terminal, crie:
-        echo "teste com docker" > sync_data/nodo1/docker.txt
-Deletar: Repita os mesmos testes de modificação e exclusão da execução local. O comportamento será o mesmo.
+* Inicie o Docker Desktop: Garanta que o aplicativo esteja aberto e o motor em execução (ícone da baleia 🐳 estável).
+* Abra 1 Terminal: Você só precisa de um terminal principal para o Docker Compose.
+* Navegue até a Pasta Raiz: Execute o cd para entrar na pasta do projeto.
+* Construa e Inicie os Containers: No terminal principal, execute:
+    * docker compose up --build
+* No segundo terminal, crie:
+       * echo "teste com docker" > sync_data/nodo1/docker.txt
+* Deletar: Repita os mesmos testes de modificação e exclusão da execução local. O comportamento será o mesmo.
 
 
 ## Funcionalidades Principais
