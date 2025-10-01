@@ -9,10 +9,10 @@ Toda a comunicação é realizada sobre o protocolo **UDP**, o que exigiu a cria
 ## Passo a passo para execução
 -Python3
 ## Para execução local 
-1-Abra 4 Terminais: Você usará 3 para os nós e 1 como "Terminal de Controle".
-2-Navegue até a Pasta Raiz: Em todos os quatro terminais, execute o comando cd para entrar na pasta do seu projeto.
-3-Limpe Dados Antigos: No Terminal de Controle, execute o comando abaixo para apagar a pasta sync_data de testes anteriores.
-4-Crie as Pastas de Sincronização: No Terminal de Controle, crie a estrutura de diretórios limpa.
+* Abra 4 Terminais: Você usará 3 para os nós e 1 como "Terminal de Controle".
+* Navegue até a Pasta Raiz: Em todos os quatro terminais, execute o comando cd para entrar na pasta do seu projeto.
+* Limpe Dados Antigos: No Terminal de Controle, execute o comando abaixo para apagar a pasta sync_data de testes anteriores.
+* Crie as Pastas de Sincronização: No Terminal de Controle, crie a estrutura de diretórios limpa.
     mkdir sync_data/nodo1
     mkdir sync_data/nodo2
     mkdir sync_data/nodo3
