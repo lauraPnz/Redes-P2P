@@ -30,7 +30,7 @@ Toda a comunicação é realizada sobre o protocolo **UDP**, o que exigiu a cria
         * del sync_data/nodo3/local.txt
 
 ## Para execução com Docker
-* Inicie o Docker Desktop: Garanta que o aplicativo esteja aberto e o motor em execução (ícone da baleia 🐳 estável).
+* Inicie o Docker Desktop: Garanta que o aplicativo esteja aberto e o motor em execução.
 * Abra 1 Terminal: Você só precisa de um terminal principal para o Docker Compose.
 * Navegue até a Pasta Raiz: Execute o cd para entrar na pasta do projeto.
 * Construa e Inicie os Containers: No terminal principal, execute:
